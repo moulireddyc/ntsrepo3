@@ -7,9 +7,9 @@ pipeline {
                 git branch: 'main', credentialsId: 'ac14a612-5bbe-42ed-9f65-79cd189ad68f', url: 'https://github.com/moulireddyc/ntsrepo3'
             }
         }
-        stage('Hello2') {
+        stage('stage2') {
             steps {
-                bat 'terraform init'
+                bat 'terraform apply'
             }
         }
         stage('Hello3') {
